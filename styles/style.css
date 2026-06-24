@@ -1,0 +1,299 @@
+:root {
+  --bg-rimary: #f5f5f5;
+  --text-default: black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+svg {
+  display: block;
+  pointer-events: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: black;
+  font-family: "FIFASans Regular", sans-serif;
+  background-color: var(--color-body);
+}
+
+header {
+  width: 100%;
+  background-color: black;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 110rem;
+  margin-inline: auto;
+  padding-inline: 5rem;
+}
+
+header img {
+  width: auto;
+  height: 4rem;
+  margin-block: 0.5rem;
+}
+
+header p {
+  color: white;
+  font-family: "FIFASans Medium", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+main {
+  padding-block: 3.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 110rem;
+  margin-top: 1.5rem;
+  margin-inline: auto;
+  padding-inline: 5rem;
+}
+
+.cards-title {
+  margin-block-end: 0.5rem;
+  color: var(--text-default);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: capitalize;
+}
+
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card-container {
+  display: flex;
+  height: 14rem;
+  background-color: #00ad4a;
+}
+
+.card-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  justify-content: space-between;
+  align-self: stretch;
+  padding: 16px 0 16px 16px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.team-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+.team-logo-wrapper img {
+  min-width: 100%;
+  height: auto;
+  border: 1px solid rgb(165 172 187 / 50%);
+}
+
+.card-team-name,
+.card-stat-name {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.card-points {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.card-name,
+.card-stat-value {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.card_stat {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.card-right {
+  position: relative;
+  width: 10.75rem;
+  height: 14rem;
+}
+
+.card-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 0 6rem;
+  background-color: #1480db;
+  inset-inline-end: 0;
+}
+
+.card-player-image {
+  position: relative;
+  width: 10.75rem;
+  height: 13.375rem;
+  margin-top: 0.625rem;
+  aspect-ratio: 3 / 4;
+}
+
+.card-player-image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3.5rem;
+  background-color: black;
+}
+
+@media (prefers-color-scheme: dark), .dark-theme {
+  :root {
+    --bg-rimary: #222;
+    --text-default: white;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  header div {
+    padding-inline: 1.5rem;
+  }
+
+  main {
+    padding-block: 2rem;
+  }
+
+  .container {
+    padding-inline: 1.5rem;
+  }
+
+  .cards-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-container {
+    height: 13.5rem;
+  }
+
+  .card-right {
+    width: 10.125rem;
+    height: 13.5rem;
+  }
+
+  .card-player-image {
+    width: 10.125rem;
+    height: 12.875rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header div {
+    padding-inline: 1rem;
+  }
+
+  .container {
+    padding-inline: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-block: 1.5rem;
+  }
+
+  .container {
+    margin-top: 1rem;
+  }
+
+  .cards-list {
+    grid-template-columns: 1fr;
+  }
+
+  .card-container {
+    height: 12.75rem;
+  }
+
+  .team-logo-wrapper {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .card-team-name,
+  .card-stat-name {
+    font-size: 0.625rem;
+    line-height: 1.125rem;
+  }
+
+  .card-name,
+  .card-stat-value {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .card_stat {
+    gap: 0.25rem;
+  }
+
+  .card-right {
+    width: 9.8125rem;
+    height: 12.75rem;
+  }
+
+  .card-player-image {
+    width: 9.5625rem;
+    height: 12.125rem;
+  }
+}
