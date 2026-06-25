@@ -27,12 +27,13 @@ svg {
 }
 
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   color: black;
   font-family: "FIFASans Regular", sans-serif;
-  background-color: var(--color-body);
+  background-color: black;
 }
 
 header {
@@ -66,12 +67,13 @@ header p {
 
 main {
   padding-block: 3.5rem;
+  background-color: var(--bg-rimary);
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 3.5rem;
   max-width: 110rem;
   margin-top: 1.5rem;
   margin-inline: auto;
@@ -217,6 +219,7 @@ footer {
   }
 
   .container {
+    gap: 2rem;
     padding-inline: 1.5rem;
   }
 
@@ -255,6 +258,7 @@ footer {
   }
 
   .container {
+    gap: 1.5rem;
     margin-top: 1rem;
   }
 

@@ -68,7 +68,10 @@ const renderPlayers = (container, players, teams, url, template) => {
       statName.textContent = data[4] === 1 ? "game" : "games";
 
       player.style.opacity = "0";
-      player.src = `${url.content}images/squad/${lastName}.avif`;
+      player.src = `${url.content}images/squad/${lastName.replace(
+        /\s+/g,
+        "-",
+      )}.avif`;
       player.alt = name.textContent;
       showImage(player);
 
