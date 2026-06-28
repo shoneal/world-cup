@@ -1,4 +1,4 @@
-export const players = {
+const players = {
   goalkeepers: {
     suzuki: ["Zion", "Suzuki", "Japan", 2, 1],
     maignan: ["Mike", "Maignan", "France", 14, 2],
@@ -45,3 +45,5 @@ const teams = {
   "Congo DR": "COD",
   Senegal: "SEN",
 }; // Сборные
+
+export { players, teams };
