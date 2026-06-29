@@ -9,7 +9,7 @@ const players = {
     dumfries: ["Denzel", "Dumfries", "Netherlands", 7, 2],
     nunoMendes: [null, "Nuno Mendes", "Portugal", 16, 2],
     pacho: ["Willian", "Pacho", "Ecuador", 10, 2],
-    laryea: ["Richie", "Laryea", "Canada", 8, 1],
+    laryea: ["Richie", "Laryea", "Canada", 14, 2],
   },
   midfielders: {
     doku: ["Jeremy", "Doku", "Belgium", 4, 1],
@@ -26,7 +26,7 @@ const players = {
     lukaku: ["Romelu", "Lukaku", "Belgium", 1, 1],
     mbappe: ["Kylian", "Mbappe", "France", 62, 3],
     balogun: ["Folarin", "Balogun", "USA", 14, 2],
-    david: ["Jonathan", "David", "Canada", 2, 1],
+    david: ["Jonathan", "David", "Canada", 5, 2],
     jackson: ["Nicolas", "Jackson", "Senegal", 1, 1],
   },
 }; // Игроки

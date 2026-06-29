@@ -83,10 +83,16 @@ const renderPlayers = (container, players, teams, url, template) => {
     container.appendChild(positionDiv);
   });
 }; // Вывод элементов в структуру HTML
+const totalPts = (data) =>
+  Object.values(data)
+    .flatMap((pos) => Object.values(pos))
+    .reduce((sum, stats) => sum + stats[3], 0); // Общее кол-во чочков
 document.addEventListener("DOMContentLoaded", () => {
   if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-theme");
   }
+
+  bodyElements.title.textContent = `${totalPts(players)} Total pts`;
 
   renderPlayers(
     bodyElements.container,
