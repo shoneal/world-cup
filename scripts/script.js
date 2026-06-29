@@ -19,6 +19,7 @@ const showImage = (img) => {
 }; // Функция для настройки загрузки изображения
 const bodyElements = {
   url: document.querySelector('meta[name="url"]'),
+  title: document.querySelector(".banner-section-title"),
   container: document.querySelector(".container"),
   template: document.getElementById("card-template"),
 }; // Элементы тела страницы
