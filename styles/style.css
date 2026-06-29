@@ -79,12 +79,14 @@ main {
 }
 
 .banner-section-container {
+  z-index: 1;
   display: flex;
-  flex: 0 0 50%;
   align-items: center;
   gap: 1rem;
-  max-width: 50%;
-  padding-left: 5rem;
+  width: 100%;
+  max-width: 110rem;
+  margin-inline: auto;
+  padding-inline: 5rem;
 }
 
 .banner-section-logo {
@@ -98,7 +100,6 @@ main {
 
 .banner-section-title {
   color: white;
-  font-weight: 400;
   font-size: 3rem;
   line-height: 1.2;
 }
@@ -107,13 +108,12 @@ main {
   content: "";
   position: absolute;
   display: block;
-  flex: 0 0;
   width: 100%;
-  max-width: 50%;
   height: 100%;
   background-image: url(https://shoneal.github.io/world-cup/images/title-banner-desktop.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: right;
+  background-size: auto 100%;
   inset-inline-end: 0;
 }
 
@@ -261,10 +261,6 @@ footer {
     height: 160px;
   }
 
-  .banner-section-container {
-    padding-left: 3.5rem;
-  }
-
   .banner-section-logo {
     height: 56px;
   }
@@ -285,7 +281,7 @@ footer {
   }
 
   .banner-section-container {
-    padding-left: 2.5rem;
+    padding-inline: 1.5rem;
   }
 
   .banner-section-logo {
@@ -295,6 +291,12 @@ footer {
   .banner-section-title {
     font-size: 1.875rem;
     line-height: 1.4;
+  }
+
+  .banner-section::after {
+    flex: 0 0;
+    max-width: 50%;
+    background-position: left;
   }
 
   .container {
@@ -326,6 +328,10 @@ footer {
     padding-inline: 1rem;
   }
 
+  .banner-section-container {
+    padding-inline: 1rem;
+  }
+
   .container {
     padding-inline: 1rem;
   }
@@ -336,10 +342,6 @@ footer {
     height: 80px;
   }
 
-  .banner-section-container {
-    padding-left: 1rem;
-  }
-
   .banner-section-title {
     font-size: 1.5rem;
     line-height: 1.5;
@@ -347,6 +349,7 @@ footer {
 
   .banner-section::after {
     background-image: url(https://shoneal.github.io/world-cup/images/title-banner-mobile.svg);
+    background-position: right;
   }
 
   .container {
