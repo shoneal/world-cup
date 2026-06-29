@@ -111,7 +111,7 @@ main {
   width: 100%;
   max-width: 50%;
   height: 100%;
-  background-image: url(https://shoneal.github.io/world-cup/title-banner-desktop.svg);
+  background-image: url(https://shoneal.github.io/world-cup/images/title-banner-desktop.svg);
   background-repeat: no-repeat;
   background-size: contain;
   inset-inline-end: 0;
@@ -346,7 +346,7 @@ footer {
   }
 
   .banner-section::after {
-    background-image: url(https://shoneal.github.io/world-cup/title-banner-mobile.svg);
+    background-image: url(https://shoneal.github.io/world-cup/images/title-banner-mobile.svg);
   }
 
   .container {
