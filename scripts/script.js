@@ -20,6 +20,7 @@ const showImage = (img) => {
 const bodyElements = {
   url: document.querySelector('meta[name="url"]'),
   title: document.querySelector(".banner-section-title"),
+  svg: document.querySelector(".banner-section-image img"),
   container: document.querySelector(".container"),
   template: document.getElementById("card-template"),
 }; // Элементы тела страницы
@@ -27,7 +28,7 @@ const renderPlayers = (container, players, teams, url, template) => {
   Object.keys(players).forEach((position) => {
     const positionDiv = document.createElement("div");
 
-    const title = document.createElement("h1");
+    const title = document.createElement("h2");
     title.className = "cards-title";
     title.textContent = position;
     positionDiv.appendChild(title);
@@ -88,10 +89,20 @@ const totalPts = (data) =>
   Object.values(data)
     .flatMap((pos) => Object.values(pos))
     .reduce((sum, stats) => sum + stats[3], 0); // Общее кол-во чочков
+const updateSvg = (svg, url) => {
+  svg.src =
+    url.content +
+    (window.innerWidth >= 768
+      ? "images/title-banner-desktop.svg"
+      : "images/title-banner-mobile.svg");
+}; // Обновление svg в баннере
+
 document.addEventListener("DOMContentLoaded", () => {
   if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-theme");
   }
+
+  updateSvg(bodyElements.svg, bodyElements.url);
 
   bodyElements.title.textContent = `${totalPts(players)} Total pts`;
 
@@ -103,3 +114,13 @@ document.addEventListener("DOMContentLoaded", () => {
     bodyElements.template,
   );
 }); // Изначальная инициализация
+let isResizing = false;
+window.addEventListener("resize", () => {
+  if (!isResizing) {
+    window.requestAnimationFrame(() => {
+      updateSvg(bodyElements.svg, bodyElements.url);
+      isResizing = false;
+    });
+    isResizing = true;
+  }
+}); // Обработчик resize

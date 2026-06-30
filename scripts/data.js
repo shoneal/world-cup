@@ -10,6 +10,8 @@ const players = {
     nunoMendes: [null, "Nuno Mendes", "Portugal", 16, 2],
     pacho: ["Willian", "Pacho", "Ecuador", 10, 2],
     laryea: ["Richie", "Laryea", "Canada", 14, 2],
+    tah: ["Jonathan", "Tah", "Germany", 3, 1],
+    brown: ["Nathaniel", "Brown", "Germany", 3, 1],
   },
   midfielders: {
     doku: ["Jeremy", "Doku", "Belgium", 4, 1],
@@ -21,6 +23,7 @@ const players = {
     wissa: ["Yoane", "Wissa", "Congo DR", 14, 1],
     sarr: ["Ismaila", "Sarr", "Senegal", 12, 1],
     bellingham: ["Jude", "Bellingham", "England", 13, 1],
+    nmecha: ["Felix", "Nmecha", "Germany", 1, 1],
   },
   forwards: {
     lukaku: ["Romelu", "Lukaku", "Belgium", 1, 1],
@@ -44,6 +47,7 @@ const teams = {
   USA: "USA",
   "Congo DR": "COD",
   Senegal: "SEN",
+  Germany: "GER",
 }; // Сборные
 
 export { players, teams };
