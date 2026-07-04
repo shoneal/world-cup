@@ -91,6 +91,7 @@ main {
 }
 
 .banner-section-title {
+  color: var(--text-default);
   font-weight: 400;
   font-size: 2.5rem;
   line-height: 3rem;
