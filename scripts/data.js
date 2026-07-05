@@ -1,7 +1,7 @@
 const players = {
   goalkeepers: {
     suzuki: ["Zion", "Suzuki", "Japan", 2, 1],
-    maignan: ["Mike", "Maignan", "France", 21, 3],
+    maignan: ["Mike", "Maignan", "France", 27, 4],
   },
   defenders: {
     guehi: ["Marc", "Guehi", "England", 1, 1],
@@ -9,7 +9,7 @@ const players = {
     dumfries: ["Denzel", "Dumfries", "Netherlands", 7, 2],
     nunoMendes: [null, "Nuno Mendes", "Portugal", 16, 2],
     pacho: ["Willian", "Pacho", "Ecuador", 10, 2],
-    laryea: ["Richie", "Laryea", "Canada", 14, 2],
+    laryea: ["Richie", "Laryea", "Canada", 16, 3],
     tah: ["Jonathan", "Tah", "Germany", 3, 1],
     brown: ["Nathaniel", "Brown", "Germany", 3, 1],
   },
@@ -24,13 +24,13 @@ const players = {
     sarr: ["Ismaila", "Sarr", "Senegal", 24, 2],
     bellingham: ["Jude", "Bellingham", "England", 16, 2],
     nmecha: ["Felix", "Nmecha", "Germany", 1, 1],
-    dembele: ["Ousmane", "Dembele", "France", 6, 1],
+    dembele: ["Ousmane", "Dembele", "France", 9, 2],
   },
   forwards: {
     lukaku: ["Romelu", "Lukaku", "Belgium", 1, 1],
-    mbappe: ["Kylian", "Mbappe", "France", 82, 4],
+    mbappe: ["Kylian", "Mbappe", "France", 96, 5],
     balogun: ["Folarin", "Balogun", "USA", 17, 3],
-    david: ["Jonathan", "David", "Canada", 5, 2],
+    david: ["Jonathan", "David", "Canada", 8, 3],
     jackson: ["Nicolas", "Jackson", "Senegal", 1, 1],
   },
 }; // Игроки
