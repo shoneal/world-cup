@@ -49,6 +49,9 @@ const teams = {
   "Congo DR": "COD",
   Senegal: "SEN",
   Germany: "GER",
+  Mexico: "MEX",
+  Switzerland: "SUI",
+  Colombia: "COL",
 }; // Сборные
 
 export { players, teams };
