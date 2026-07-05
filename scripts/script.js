@@ -22,6 +22,7 @@ const bodyElements = {
   title: document.querySelector(".banner-section-title"),
   svg: document.querySelector(".banner-section-image img"),
   container: document.querySelector(".container"),
+  footer: document.querySelector("footer"),
   template: document.getElementById("card-template"),
 }; // Элементы тела страницы
 const renderPlayers = (container, players, teams, url, template) => {
@@ -89,7 +90,10 @@ const totalPts = (data) =>
   Object.values(data)
     .flatMap((pos) => Object.values(pos))
     .reduce((sum, stats) => sum + stats[3], 0); // Общее кол-во чочков
-
+bodyElements.footer.addEventListener("click", (e) => {
+  if (!e.target.closest("div")) return;
+  window.scrollTo(0, 0);
+}); // Обработчик на логотип в footer
 document.addEventListener("DOMContentLoaded", () => {
   if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-theme");

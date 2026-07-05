@@ -228,6 +228,10 @@ footer {
   background-color: black;
 }
 
+footer div {
+  cursor: pointer;
+}
+
 @media (prefers-color-scheme: dark), .dark-theme {
   :root {
     --bg-rimary: #222;
