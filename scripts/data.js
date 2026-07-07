@@ -12,6 +12,7 @@ const players = {
     laryea: ["Richie", "Laryea", "Canada", 16, 3],
     tah: ["Jonathan", "Tah", "Germany", 3, 1],
     brown: ["Nathaniel", "Brown", "Germany", 3, 1],
+    freeman: ["Alex", "Freeman", "USA", 1, 1],
   },
   midfielders: {
     doku: ["Jeremy", "Doku", "Belgium", 4, 1],
@@ -25,7 +26,7 @@ const players = {
     bellingham: ["Jude", "Bellingham", "England", 30, 3],
     nmecha: ["Felix", "Nmecha", "Germany", 1, 1],
     dembele: ["Ousmane", "Dembele", "France", 9, 2],
-    quinones: ["Julian", "Quinones", "Mexico", 8, 1]
+    quinones: ["Julian", "Quinones", "Mexico", 8, 1],
   },
   forwards: {
     lukaku: ["Romelu", "Lukaku", "Belgium", 1, 1],
