@@ -27,11 +27,12 @@ const players = {
     nmecha: ["Felix", "Nmecha", "Germany", 1, 1],
     dembele: ["Ousmane", "Dembele", "France", 9, 2],
     quinones: ["Julian", "Quinones", "Mexico", 8, 1],
+    lerma: ["Jefferson", "Lerma", "Colombia", 6, 1]
   },
   forwards: {
     lukaku: ["Romelu", "Lukaku", "Belgium", 1, 1],
     mbappe: ["Kylian", "Mbappe", "France", 96, 5],
-    balogun: ["Folarin", "Balogun", "USA", 17, 3],
+    balogun: ["Folarin", "Balogun", "USA", 22, 4],
     david: ["Jonathan", "David", "Canada", 8, 3],
     jackson: ["Nicolas", "Jackson", "Senegal", 1, 1],
   },
