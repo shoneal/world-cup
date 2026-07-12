@@ -4,7 +4,7 @@ const players = {
     maignan: ["Mike", "Maignan", "France", 33, 5],
   },
   defenders: {
-    guehi: ["Marc", "Guehi", "England", 2, 2],
+    guehi: ["Marc", "Guehi", "England", 4, 3],
     vanDijk: ["Virgil", "Van Dijk", "Netherlands", 13, 2],
     dumfries: ["Denzel", "Dumfries", "Netherlands", 7, 2],
     nunoMendes: [null, "Nuno Mendes", "Portugal", 16, 2],
@@ -14,6 +14,8 @@ const players = {
     brown: ["Nathaniel", "Brown", "Germany", 3, 1],
     freeman: ["Alex", "Freeman", "USA", 1, 1],
     kounde: ["Jules", "Kounde", "France", 6, 1],
+    spence: ["Djed", "Spence", "England", 1, 1],
+    akanji: ["Manuel", "Akanji", "Switzerland", 2, 1],
   },
   midfielders: {
     doku: ["Jeremy", "Doku", "Belgium", 4, 1],
@@ -24,7 +26,7 @@ const players = {
     diomande: ["Yan", "Diomande", "Côte d'Ivoire", 10, 2],
     wissa: ["Yoane", "Wissa", "Congo DR", 14, 1],
     sarr: ["Ismaila", "Sarr", "Senegal", 24, 2],
-    bellingham: ["Jude", "Bellingham", "England", 30, 3],
+    bellingham: ["Jude", "Bellingham", "England", 43, 4],
     nmecha: ["Felix", "Nmecha", "Germany", 1, 1],
     dembele: ["Ousmane", "Dembele", "France", 19, 3],
     quinones: ["Julian", "Quinones", "Mexico", 8, 1],
