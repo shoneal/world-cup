@@ -1,7 +1,7 @@
 const players = {
   goalkeepers: {
     suzuki: ["Zion", "Suzuki", "Japan", 2, 1],
-    maignan: ["Mike", "Maignan", "France", 33, 5],
+    maignan: ["Mike", "Maignan", "France", 34, 6],
   },
   defenders: {
     guehi: ["Marc", "Guehi", "England", 4, 3],
@@ -13,9 +13,10 @@ const players = {
     tah: ["Jonathan", "Tah", "Germany", 3, 1],
     brown: ["Nathaniel", "Brown", "Germany", 3, 1],
     freeman: ["Alex", "Freeman", "USA", 1, 1],
-    kounde: ["Jules", "Kounde", "France", 6, 1],
+    kounde: ["Jules", "Kounde", "France", 7, 2],
     spence: ["Djed", "Spence", "England", 1, 1],
     akanji: ["Manuel", "Akanji", "Switzerland", 2, 1],
+    saliba: ["William", "Saliba", "France", 1, 1],
   },
   midfielders: {
     doku: ["Jeremy", "Doku", "Belgium", 4, 1],
@@ -28,13 +29,14 @@ const players = {
     sarr: ["Ismaila", "Sarr", "Senegal", 24, 2],
     bellingham: ["Jude", "Bellingham", "England", 43, 4],
     nmecha: ["Felix", "Nmecha", "Germany", 1, 1],
-    dembele: ["Ousmane", "Dembele", "France", 19, 3],
+    dembele: ["Ousmane", "Dembele", "France", 22, 4],
     quinones: ["Julian", "Quinones", "Mexico", 8, 1],
     lerma: ["Jefferson", "Lerma", "Colombia", 6, 1],
+    barcola: ["Bradley", "Barcola", "France", 1, 1],
   },
   forwards: {
     lukaku: ["Romelu", "Lukaku", "Belgium", 1, 1],
-    mbappe: ["Kylian", "Mbappe", "France", 110, 6],
+    mbappe: ["Kylian", "Mbappe", "France", 114, 7],
     balogun: ["Folarin", "Balogun", "USA", 22, 4],
     david: ["Jonathan", "David", "Canada", 8, 3],
     jackson: ["Nicolas", "Jackson", "Senegal", 1, 1],
