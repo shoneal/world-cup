@@ -60,6 +60,7 @@ const teams = {
   Mexico: "MEX",
   Switzerland: "SUI",
   Colombia: "COL",
+  Spain: "ESP",
 }; // Сборные
 
 export { players, teams };
