@@ -36,7 +36,7 @@ const players = {
     quinones: ["Julian", "Quinones", "Mexico", 8, 1],
     lerma: ["Jefferson", "Lerma", "Colombia", 6, 1],
     barcola: ["Bradley", "Barcola", "France", 1, 1],
-    // yamal: ["Lamine", "Yamal", "Spain", 0, 1],
+    yamal: ["Lamine", "Yamal", "Spain", 10, 1],
     eze: ["Eberechi", "Eze", "England", 5, 1],
     olise: ["Michael", "Olise", "France", 11, 1],
     doue: ["Desire", "Doue", "France", 1, 1],
